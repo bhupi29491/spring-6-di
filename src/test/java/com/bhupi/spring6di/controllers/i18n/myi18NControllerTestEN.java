@@ -6,9 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-@ActiveProfiles("EN")
+import static org.junit.jupiter.api.Assertions.*;
+
+@ActiveProfiles({"EN", "DEV"})
 @SpringBootTest
-public class myi18NControllerTestEN {
+class myi18NControllerTestEN {
 
     @Autowired
     Myi18NController myi18NController;

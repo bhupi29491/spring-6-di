@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-@ActiveProfiles("ES")
+@ActiveProfiles({"ES", "UAT"})
 @SpringBootTest
-public class myi18NControllerTestES {
+class myi18NControllerTestES {
 
     @Autowired
     Myi18NController myi18NController;
